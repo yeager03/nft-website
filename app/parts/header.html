@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>
+		<!--#echo var="title" -->
+	</title>
+	<meta name="description" content="Design website. Created 03/02/2022">
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+	<header class="header" data-aos="fade-down" data-aos-delay="50">
+		<div class="container container-flex justify-content-between">
+			<a href="#main" class="logo">
+				<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M24 5.20001L18 24.8L4 39.8L24 35.2L44 40L30 25L24 5.20001Z" fill="white" />
+				</svg>
+				Design
+			</a>
+			<nav class="nav">
+				<ul class="nav__items">
+					<li class="nav__links">
+						<a href="#main" class="nav__links__active">
+							Main
+						</a>
+					</li>
+					<li class="nav__links">
+						<a href="#portfolio">
+							Portfolio
+						</a>
+					</li>
+					<li class="nav__links">
+						<a href="#sponsors">
+							Sponsors
+						</a>
+					</li>
+					<li class="nav__links">
+						<a href="#contact">
+							Contact
+						</a>
+					</li>
+				</ul>
+
+				<div class="hamburger" onclick="this.classList.toggle('hamburger__active')">
+					<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 200 200">
+						<g stroke-width="6.5" stroke-linecap="round">
+							<path d="M72 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+							<path
+								d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+								fill="none" stroke="#fff" />
+							<path d="M72 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+							<path
+								d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+								fill="none" stroke="#fff" />
+							<path d="M100.75 82.286h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+							<path d="M100.75 125.143h28.75" fill="#009100" fill-rule="evenodd" stroke="#fff" />
+						</g>
+					</svg>
+				</div>
+			</nav>
+		</div>
+	</header>

@@ -1,0 +1,34 @@
+.sponsors
+    min-height: 200px
+    padding: 70px 0px
+
+.sponsors__items
+    display: flex
+    flex-wrap: wrap
+    grid-row-gap: 1em
+    grid-column-gap: 70px
+    align-items: center
+    justify-content: center
+
+.sponsors__item
+    display: flex
+    align-items: center
+    font-weight: 400
+    font-size: 37px
+    letter-spacing: 4px
+    color: rgba(255,255 ,255 ,.5 )
+    &:hover
+        color: rgba(255,255 ,255 ,.5 )
+    img
+        margin-right: 7px
+        width: 60px
+    @media (max-width: 576px)
+        font-size: 30px
+    @media (max-width: 320px)
+        font-size: 21px
+
+.sponsors__item__img
+    img
+        width: 100%
+    @media (max-width: 320px)
+        width: 80%

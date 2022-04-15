@@ -1,0 +1,85 @@
+.btn_wrap
+    display: flex
+    justify-content: center
+    align-content: center
+    max-width: 250px
+    padding: .25rem
+    border: none
+    background: rgb(255,57,152)
+    background: linear-gradient(90deg, rgba(255,57,152,1) 0%, rgba(255,57,57,1) 35%, rgba(255,129,57,1) 70%, rgba(57,255,160,1) 100%)
+    border-radius: 50px
+    &:hover
+        animation: animate .25s infinite reverse
+    @media (max-width: 992px)
+        padding: .21rem
+
+@keyframes animate
+    0%
+        background: linear-gradient(90deg, rgba(255,57,152,1) 0%, rgba(255,57,57,1) 35%, rgba(255,129,57,1) 70%, rgba(57,255,160,1) 100%)
+    25%
+        background: linear-gradient(90deg, rgba(255,57,152,1) 0%, rgba(255,57,57,1) 35%, rgba(57,255,160,1)70%, rgba(255,129,57,1) 100%)
+    50%
+        background: linear-gradient(90deg, rgba(255,57,152,1) 0%, rgba(57,255,160,1) 35%,rgba(255,57,57,1) 70%, rgba(255,129,57,1) 100%)
+    100%
+        background: linear-gradient(90deg, rgba(57,255,160,1) 0%,rgba(255,57,152,1) 35%,rgba(255,57,57,1) 70%, rgba(255,129,57,1) 100%)
+.btn
+    font-weight: 600
+    font-size: 20px
+    color: white
+    border-radius: 50px
+    background: #111111
+    color: white
+    padding: 1.3rem 3rem
+    &:hover
+        color: white
+    @media (max-width: 1024px)
+        font-size: 18px
+        padding: 1.1rem 2.2rem
+    @media (max-width: 992px)
+        font-size: 16px
+        padding: 1rem 2.1rem
+
+.portfolio__btns
+    margin-top: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.portfolio_btn
+    border: none
+    padding: 11px 20px
+    font-size: 17px
+    border-radius: 50px
+    background: none
+    color: $textcolor
+    border: 2px solid $accent
+    font-weight: 500
+    transition: all .2s ease-out
+    &:hover
+        background: $accent
+        color: white
+    &:not(:last-child)
+        margin-right: 25px
+    @media (max-width: 1024px)
+        font-size: 15px
+    @media (max-width: 768px)
+        font-size: 14px
+        padding: 8px 16px
+        &:not(:last-child)
+            margin-right: 17px
+
+.portfolio_btn__active
+    background: $accent
+    color: white
+
+.btn-send
+    display: block
+    width: 100%
+    padding: 17px 0px
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%)
+    border: none
+    font-weight: 500
+    font-size: 22px
+    color: #f8f8f5
+    @media (max-width: 480px)
+        font-size: 16px
